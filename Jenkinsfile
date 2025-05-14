@@ -36,7 +36,7 @@ pipeline {
                 script {
                     sh "docker stop devops-container || true"
                     sh "docker rm devops-container || true"
-                    sh "docker run -d --name devops-container -p 80:3000 ${IMAGE_NAME}:${TAG}"
+                    sh "docker run -d --name devops-container -p 80:80 ${IMAGE_NAME}:${TAG}"
                 }
             }
         }

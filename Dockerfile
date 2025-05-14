@@ -10,5 +10,5 @@ RUN rm -rf ./*
 # Copy all your frontend files into the Nginx html directory
 COPY . .
 
-# Expose port 3000 to host
-EXPOSE 3000
+# Expose port 80 to host
+EXPOSE 80
